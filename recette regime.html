@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <title>METABOLISME</title>
+        <link rel="stylesheet" href="tableau.css"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="accueil.css">
+        <script src="java.js"></script>
+    </head>
+    <body>
+			<header class="back">
+				<h1>Fit NessNess</h1>
+				<h3>Taille stylée pour vie stylée</h3> 
+			<nav>
+				<ul>
+					<li><a href="../accueil/accueil.html">Accueil</a></li>
+					<li><a href="">Activités</a>
+						<ul class="submenu">
+							<li><a href="">Musculation</a>
+							   <ul>
+								  <li><a href="../activités/musculation/abdos.html">Abdos</a></li>
+								  <li><a href="../activités/musculation/bras.html">Bras</a></li>
+								  <li><a href="../activités/musculation/epaules.html">Epaules</a></li>
+								  <li><a href="../activités/musculation/jambe.html">Jambe</a></li>
+								  <li><a href="../activités/musculation/poitrine.html">Poitrine</a></li>
+							   </ul>
+							</li>
+							<li><a href="../activités/aquagym/aquagym8.html">Aquagym</a></li>
+							<li><a href="../activités/cardio.html">Cardio</a></li>
+						</ul>
+					</li>
+					<li><a href="../coach personnel/coach personnel.html">Coach personnel</a> </li>
+					<li><a href="">Recette régime</a>
+						<ul  class="submenu">
+							<li><a href="../recette régime/recette regime.html">METABOLISME</a></li>
+							<li><a href="../recette régime/repas.html">Repas pour prendre de masse</a></li>
+							<li><a href="../recette régime/Exempeles.html">Repas de perte de poids</a></li>
+						 </ul>
+					</li>
+					<li><a href="">Boutique</a> 
+					   <ul class="submenu">
+							<li><a href="../boutique/vetements.html">Vetements</a></li>
+							<li><a href="../boutique/mg.html">Machines de gym</a></li>
+							<li><a href="../boutique/nutrition.html">Nutrition</a></li>
+							<li><a href="../boutique/OM.html">Objets médicaux</a></li>
+					   </ul>
+					</li>
+					<li><a href="../les nouvelles/les nouvelles.html">Les nouvelles</a> </li>
+				</ul>
+			</nav>
+             </header> <br>
+             <br>
+             <br>
+        <h1 class="nn"><center>recette régime</center></h1>
+        <div>
+        <p>Nous utiliserons la formule de Harris et Benedict (1919) pour calculer le métabolisme de base. Nous vous proposons également ci-dessous un outil pour le calculer</p>
+        <ul>
+            <li>Homme = (13,7516 x Poids (kg)) + (500,33 x Taille (m)) - (6,7550 x Age) + 66,473
+            </li>
+            <li>Femme = (9,5634 x Poids (kg)) + (184,96 x Taille (m)) - (4,6756 x Age) + 655,0955
+            </li>
+            </ul>
+        </div>
+                <!-- <div style='border:solid windowtext .5pt;padding:3.0pt 5.0pt 5.0pt 5.0pt'> -->
+                <a name="calculer"></a>
+                <form method="post" action="#calculer" NAME="formulaire">
+                <table border="1" cellspacing="0" cellpadding="5" style='width:100%'>
+                <tr><td colspan="5" align="center"><span class="highlight"><b>CALCULEZ VOTRE METABOLISME BASAL</b></span></td></tr>
+                <tr><td>
+                <table cellpadding="0" cellspacing="3" style='width:100%'> 
+                <tr><td style='width:22%'><b>Sexe : </b></td><td style='width:39%'><INPUT style='width:.8em;height:.8em' type=radio name="sexe" value="homme" checked >homme 
+                   <INPUT style='width:.8em;height:.8em' type=radio name="sexe" value="femme" unchecked >Femme</td>
+                   <td>   </td>
+                </tr>
+                
+                <tr><td><b>Poids :   </b></td><td><INPUT style='width:80%' type=text name="poids" value=""></td><td>kg (ex. : 70)</td></tr>
+                
+                <tr><td><b>Taille : </b></td><td><INPUT style='width:80%' type=text name="taille" value=""></td><td>cm (ex. : 175)</td></tr>
+                <tr><td><b>Age :        </b></td><td><INPUT style='width:80%' type=text name="age" value=""></td><td>ans (ex. : 35)</td></tr>
+                </table>
+                </td></tr>
+                
+                <tr><td colspan="5" align="center">
+                <INPUT style='font-weight:bold' type="submit"onClick="evaluation()" value="Lancer le calcul" color="#0080FF">
+                </td></tr>
+                
+                <tr><td colspan="5" align="center"> <!-- <b>RESULTAT</b> -->
+                Votre métabolisme basal est de <INPUT style='width:20%' type=text name="calories" value=""> Calories par jour.
+                </td></tr>
+                </table>
+                </form>
+                </div>
+                <div>
+                <p>Selon votre niveau d'activité, multipliez ce chiffre par :
+                </p>
+                
+                <ul>
+                <li>x 1,375 si vous avez un travail de bureau et une faible dépense sportive (sédentaire)
+                </li>
+                <li>x 1,56 si vous vous entraînez 1 à 3 fois par semaine (activité physique légère)
+                </li>
+                <li>x 1,64 si vous vous entraînez 4 à 6 fois par semaine (activité physique modérée)
+                </li>
+                <li>x 1,82 si vous vous entraînez plus de 6 fois par semaine (activité physique intense)
+                </li>
+                </ul>
+                <p><u>Si vous souhaitez maintenir votre poids stable</u> : Le nombre obtenu correspond à votre maintenance. En consommant ce nombre de calories, vous ne devrez ni prendre du poids, ni en perdre.
+                </p>
+                <p><u>Pour prendre du poids</u> : Vous pouvez rajouter +10&nbsp;% dans votre régime alimentaire puis augmenter progressivement au fil des résultats. 
+                </p>
+                <p><u>Pour une perte de poids</u> : Vous pouvez enlever -10&nbsp;% dans votre calcul des besoins caloriques journaliers en diminuant progressivement les glucides. 
+                </p>
+                </div>
+                <h2 class="nn"><center>Tableau des calories</center></h2>
+                <h3 class="nn"><center>La portion des calories dans 100 Gr de chaque produit</center></h3>
+                <div>
+                <table border="1" cellspecing="10" class="tab">
+                    <tr>
+                        <th style="background:#C6AFAC ;"><center>Produits</center></th>
+                        <th style="background:#C6AFAC ;"><center>Kcal</center></th>
+                    </tr>
+                    <tr>
+                        <td style="background:#E5D5D3 ;"><center>Poulet</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Carrotes</center></td>
+                        <td><center>26</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Choux fleur</center></td>
+                        <td><center>100</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Choux rouge</center></td>
+                        <td><center>29</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Concombre</center></td>
+                        <td><center>16</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Poireau</center></td>
+                        <td><center>25</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Pomme de terre</center></td>
+                        <td><center>75</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Tomates</center></td>
+                        <td><center>20</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Bettrave</center></td>
+                        <td><center>40</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Haricots vert</center></td>
+                        <td><center>25</center></td>
+                    </tr>
+                    <tr>
+                        <td style="background:#E5D5D3 ;"><center>Asperge</center></td>
+                        <td><center>25</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Banane</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Orange</center></td>
+                        <td><center>45</center></td>
+                    </tr>
+                </table><br>
+                <br>
+                <table class="tab">
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Kiwi</center></td>
+                        <td><center>53</center></td>
+                    </tr>
+                    
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Pomme</center></td>
+                        <td><center>54</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Poire</center></td>
+                        <td><center>60</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Fraise</center></td>
+                        <td><center>36</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Avocat</center></td>
+                        <td><center>158</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Raisain</center></td>
+                        <td><center>74</center></td>
+                    </tr>
+               
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Grenade</center></td>
+                        <td><center>62</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Limon</center></td>
+                        <td><center>20</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Viande</center></td>
+                        <td><center>52</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Bar</center></td>
+                        <td><center>98</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Cabillaud</center></td>
+                        <td><center>74</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Carrelet</center></td>
+                        <td><center>65</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Merlu</center></td>
+                        <td><center>91</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Dorade</center></td>
+                        <td><center>91</center></td>
+                    </tr>
+                </table><br>
+                <br>
+                <table class="tab">
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Homard</center></td>
+                        <td><center>94</center></td>
+                    </tr>
+                    
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Langouste</center></td>
+                        <td><center>98</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Limande</center></td>
+                        <td><center>76</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Lotte</center></td>
+                        <td><center>86</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Merlan</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>  
+                        <td style="background:#E5D5D3 ;"><center>Moules</center></td>
+                        <td><center>76</center></td>
+                    </tr>
+                    <tr>   
+                        <td style="background:#E5D5D3 ;"><center>Raie</center></td>
+                        <td><center>93</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Seiche</center></td>
+                        <td><center>93</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Soule</center></td>
+                        <td><center>75</center></td>
+                    </tr>
+                    <tr>
+                        <td style="background:#E5D5D3 ;"><center>Thon</center></td>
+                        <td><center>82</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Sardine</center></td>
+                        <td><center>85</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Saumon</center></td>
+                        <td><center>206</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Avoine</center></td>
+                        <td><center>351</center></td>
+                    </tr>
+                    <tr>    
+                        <td style="background:#E5D5D3 ;"><center>Riz</center></td>
+                        <td><center>115</center></td>
+                    </tr>
+                </table>
+                  </div>
+    </body>
+</html>
