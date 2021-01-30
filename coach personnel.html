@@ -1,0 +1,146 @@
+<html>
+    <head>
+		<title>Coach personnel</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="accueil.css">
+		<script src="java.js"></script>
+    </head>
+    <body>
+		<div class="back">
+			<header>
+				<h1>Fit NessNess</h1>
+				<h3>Taille stylée pour vie stylée</h3> 
+			<nav>
+				<ul>
+					<li><a href="../accueil/accueil.html">Accueil</a></li>
+					<li><a href="">Activités</a>
+						<ul class="submenu">
+							<li><a href="">Musculation</a>
+							   <ul>
+								  <li><a href="../activités/musculation/abdos.html">Abdos</a></li>
+								  <li><a href="../activités/musculation/bras.html">Bras</a></li>
+								  <li><a href="../activités/musculation/epaules.html">Epaules</a></li>
+								  <li><a href="../activités/musculation/jambe.html">Jambe</a></li>
+								  <li><a href="../activités/musculation/poitrine.html">Poitrine</a></li>
+							   </ul>
+							</li>
+							<li><a href="../activités/aquagym/aquagym8.html">Aquagym</a></li>
+							<li><a href="../activités/cardio.html">Cardio</a></li>
+						</ul>
+					</li>
+					<li><a href="../coach personnel/coach personnel.html">Coach personnel</a> </li>
+					<li><a href="">Recette régime</a>
+						<ul  class="submenu">
+							<li><a href="../recette régime/recette regime.html">METABOLISME</a></li>
+							<li><a href="../recette régime/repas.html">Repas pour prendre de masse</a></li>
+							<li><a href="../recette régime/Exempeles.html">Repas de perte de poids</a></li>
+						 </ul>
+					</li>
+					<li><a href="">Boutique</a> 
+					   <ul class="submenu">
+							<li><a href="../boutique/vetements.html">Vetements</a></li>
+							<li><a href="../boutique/mg.html">Machines de gym</a></li>
+							<li><a href="../boutique/nutrition.html">Nutrition</a></li>
+							<li><a href="../boutique/OM.html">Objets médicaux</a></li>
+					   </ul>
+					</li>
+					<li><a href="../les nouvelles/les nouvelles.html">Les nouvelles</a> </li>
+				</ul>
+			</nav>
+			 </header> 
+			</div>
+			<div>
+        <p><centre> Coach de musculation et cardio:</centre><br>JADIDI Salim  tel:0655555555<br>ASRI Sara tel:0611111111 <br>SOUFIANI Houssam tel:0688888888 <br>GHAZALI Lina tel:0699999999 </p>
+        <p>Coach d'Aquagym:<br>AMRANI Said tel:0622222222 <br> KORARE Sami tel:0644444444 <br> ASNARE Imane tel:0600000000</p>
+        <from method="post" action="traitement.php" onsubmit = "return validateForm()">      
+			<fieldset >
+				<legend> Vos coordonnés </legend> 
+				<p>
+				<table width:100%>
+				<tr>
+				<td>
+			 
+					<label for="Nom"> Nom :</label> 
+			   </td>	
+			   <td>
+			 <input type="text" name="Nom" id="Nom" placeholder=" votre nom" size="50" maxlength="10" onchange="nomValidate()"/> 
+			 </td> 
+			 </tr>
+			 <tr>
+			 <td>
+			 <label for="Prénom"> Prénom: </label>
+			 </td>
+			 <td>
+			 <input type="text" name="Prénom" id="Prénom" placeholder="votre Prénom" size="50" maxlength="10" onchange="prenomValidate()" /> 
+			 </td>
+			 </tr> 
+			 <tr> 
+			 <td>
+			 <label for="date de naissance"> date de naissance:</label>
+			 </td> 
+			 <td>
+			 <input type="date" id="date de naissance" name="date de naissance"
+				value="2021/02/02"> 
+				</td>
+				</tr>
+				<tr>
+				<td>
+				
+				<label for="mail">mail:</label>
+				</td>
+				<td>
+			 <input input type="text" name = "email" id="email" placeholder="Votre email" onchange="validateEmail(email)"/> 
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<label for="Homme"> Homme</label>
+				</td>
+				<td>
+					<input  label type="radio" name="gender" id="male">
+				 </td>
+				 </tr>
+				 <tr>
+				 <td>
+				 <label for="Femme"> Femme</label>
+				 </td>
+				 <td>
+					<input type="radio" name="gender" id="female">
+				 </td> 
+				 <tr>
+				 <td>
+				 <label for="Coach"> Coach </label>
+				 </td>
+				 <td>
+				 <select name="Coach">
+				 <option value="Coach" selected> votre Coach </option>
+		 <option value="Coach">JADIDI Salim  </option>
+		 
+		 <option value="Coach">ASRI Sara </option>
+		 <option value="Coach">SOUFIANI Houssam </option>
+		 <option value="Coach">GHAZALI Lina</option>
+		 <option value="Coach">AMRANI Said</option>
+		 <option value="Coach">KORARE Sami </option>
+		 <option value="Coach">ASNARE Imane </option>
+		 </select>
+		 </td>
+		 </tr>
+		 <tr>
+			  <td colspan="2">
+				  <!-- <input type="submit" value="Envoyer"/>
+				 <input type="reset" value="Annuler"/> -->
+				 <button type="submit">Envoyer</button>
+                 <button type="reset">Annuler</button>
+				</td> 
+		</tr>
+		 </table>
+		 
+				 
+				 </p>
+			 
+					 
+			 </fieldset>
+			 </from>
+			 </div>
+    </body>
+</html>

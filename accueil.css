@@ -14,14 +14,10 @@ body{
     width: 100%;
     background:white;
 }
-.nn{
-    background: black;
-    color: rgb(212, 194, 24);
-}
 div{
-    /* margin-right: 7%; */
-    /* margin-left: 7%; */
-background:rgb(216, 211, 211);
+    margin-right: 7%;
+    margin-left: 7%;
+    background:rgb(216, 211, 211);
    
 }
 nav{
